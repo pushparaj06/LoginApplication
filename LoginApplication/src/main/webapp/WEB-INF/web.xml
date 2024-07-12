@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>LoginApplication</display-name>
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>LoginServe</display-name>
+    <servlet-name>LoginServe</servlet-name>
+    <servlet-class>com.tcs.LoginServe</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServe</servlet-name>
+    <url-pattern>/LoginServe</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FailServlet</display-name>
+    <servlet-name>FailServlet</servlet-name>
+    <servlet-class>com.tcs.FailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FailServlet</servlet-name>
+    <url-pattern>/FailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SucessServlet</display-name>
+    <servlet-name>SucessServlet</servlet-name>
+    <servlet-class>com.tcs.SucessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SucessServlet</servlet-name>
+    <url-pattern>/SucessServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
